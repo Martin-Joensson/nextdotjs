@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import { Geist, Geist_Mono, Poppins, Outfit, Rubik } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,6 +12,20 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+const outfit = Outfit({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+const rubik = Rubik({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const materialSymbols = localFont({
+  src: "./fonts/MaterialSymbolsRounded.woff2",
+  weight: "100 900",
+  variable: "--font-material-symbols",
+});
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,7 +34,6 @@ const poppins = Poppins({
   variable: "--font-poppins",
   display: "swap",
 });
-
 
 export const metadata: Metadata = {
   title: "Futurama Is Dope",
@@ -34,7 +48,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable}  h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${rubik.variable} ${outfit.variable} ${poppins.variable} ${materialSymbols.variable}  h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

@@ -14,6 +14,12 @@ export default function Home() {
           alt=""
         />
         <div className="absolute inset-0 bg-linear-to-b  from-amber-700/50 via-zinc-800/80 to-purple-900/30 to-90%"></div>
+        <div className="relative z-20 flex mx-auto border-2 border-dashed border-zinc-100/50 rounded-full p-8 aspect-square animate-orbit motion-reduce:animate-none">
+          <span className="absolute -top-25 text-6xl material-symbols material-symbols-filled text-teal-500 rotate-70">
+            rocket_launch
+          </span>
+        </div>
+
         <div className="z-10 flex flex-col gap-20 max-w-3xl m-auto text-center justify-between bg-radial-[at_50%_60%] from-black/50 to-70%">
           <h1 className="font-poppins font-black text-6xl leading-none">
             Having fun with <span className="text-amber-500">Next.js</span>{" "}
