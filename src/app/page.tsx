@@ -13,7 +13,7 @@ export default function Home() {
           height={400}
           alt=""
         />
-        <div className="absolute inset-0 bg-radial-[at_50%_5%] from-gray-700/10 via-purple-400/30 to-zinc-900/80 to-90%"></div>
+        <div className="absolute inset-0 bg-linear-to-b  from-amber-700/50 via-zinc-800/80 to-purple-900/30 to-90%"></div>
         <div className="z-10 flex flex-col gap-20 max-w-3xl m-auto text-center justify-between bg-radial-[at_50%_60%] from-black/50 to-70%">
           <h1 className="font-poppins font-black text-6xl leading-none">
             Having fun with <span className="text-amber-500">Next.js</span>{" "}
@@ -28,13 +28,13 @@ export default function Home() {
           </p>
           <div className="flex justify-center items-center gap-4 flex-col sm:flex-row font-bold">
             <a
-              className="bg-zinc-800 border border-zinc-100 hover:bg-teal-800/80 active:bg-teal-800/90 rounded-lg px-10 py-2"
+              className="bg-zinc-800 border border-zinc-100 hover:bg-amber-600/60 active:bg-teal-800/90 rounded-lg px-10 py-2"
               href="#"
             >
               CTA
             </a>
             <a
-              className="bg-teal-300/20 border border-teal-50 hover:bg-teal-400/20 active:bg-teal-400/40 rounded-lg px-10 py-2"
+              className="bg-teal-300/20 border border-teal-50 hover:bg-teal-400/40 active:bg-teal-400/40 rounded-lg px-10 py-2"
               href="#"
             >
               Let&apos;s Go!
