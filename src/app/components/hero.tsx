@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "./button";
 
 export const Hero = () => {
   return (
@@ -33,18 +34,12 @@ export const Hero = () => {
             magnam placeat.
           </p>
           <div className="flex justify-center items-center gap-4 flex-col sm:flex-row font-bold">
-            <a
-              className="bg-zinc-800 border border-zinc-100 hover:bg-amber-600/60 active:bg-amber-800/90 rounded-lg px-10 py-2"
-              href="#"
-            >
-              CTA
-            </a>
-            <a
+            <Button text="CTA" linkString="/" className="" />{" "}
+            <Button
+              text="Let's Go!"
+              linkString="/"
               className="bg-teal-300/20 border border-teal-50 hover:bg-teal-400/40 active:bg-teal-600/60 rounded-lg px-10 py-2"
-              href="#"
-            >
-              Let&apos;s Go!
-            </a>
+            />
           </div>
         </div>
       </main>

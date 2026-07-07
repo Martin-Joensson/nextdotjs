@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 const outfit = Outfit({
-  variable: "--font-geist-mono",
+  variable: "--font-outfito",
   subsets: ["latin"],
 });
 const rubik = Rubik({
-  variable: "--font-geist-mono",
+  variable: "--font-rubik",
   subsets: ["latin"],
 });
 

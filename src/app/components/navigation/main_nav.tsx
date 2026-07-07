@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function MainNav() {
   return (
-    <div className="font-poppins fixed z-50 w-full flex items-center justify-between p-4 border-b border-zinc-400 bg-violet-500/60 backdrop-blur-sm">
+    <div className="font-rubik font-semibold fixed z-50 w-full flex items-center justify-between p-4 border-b border-zinc-400 bg-violet-500/60 backdrop-blur-sm">
       <Link href="/" className="flex items-center text-2xl">
         <span className="material-symbols material-symbols-filled items-center text-2xl">
           rocket
