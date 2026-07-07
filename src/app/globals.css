@@ -60,7 +60,7 @@ body {
 
 
 .animate-orbit {
-  animation: spin-right 20s linear infinite;
+  animation: spin-right 60s linear infinite;
 }
 
 @keyframes spin-right {
