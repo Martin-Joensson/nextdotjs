@@ -4,7 +4,7 @@ import Button from "./button";
 export const Hero = () => {
   return (
     <div className="min-h-60 w-full flex flex-col flex-1 bg-zinc-50 font-sans dark:bg-zinc-900">
-      <main className="relative flex gap-10 w-full  bg-black/30  flex-col items-center justify-between py-32 px-16  sm:items-start">
+      <main className="relative flex gap-10 w-full bg-black/30  flex-col items-center justify-between py-44 px-16  sm:items-start">
         <Image
           className="absolute w-full h-full top-0 left-0 z-0 object-cover"
           src={
