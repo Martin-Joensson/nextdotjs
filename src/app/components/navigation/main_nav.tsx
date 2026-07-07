@@ -1,6 +1,20 @@
 import Link from "next/link";
 
 export default function MainNav() {
+  const navLinks = [
+    {
+      link: "/classes",
+      text: "Classes",
+    },
+    {
+      link: "/about",
+      text: "About us",
+    },
+    {
+      link: "/contact",
+      text: "Contact",
+    },
+  ];
   return (
     <div className="font-rubik font-semibold fixed z-50 w-full flex items-center justify-between p-4 border-b border-zinc-400 bg-violet-500/60 backdrop-blur-sm">
       <Link href="/" className="flex items-center text-2xl">
@@ -11,15 +25,11 @@ export default function MainNav() {
       </Link>
       <nav className="">
         <ul className="flex gap-8">
-          <li>
-            <Link href="/classes">Classes</Link>
-          </li>
-          <li>
-            <Link href="/about">About Us</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <Link href={link.link}>{link.text}</Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </div>
