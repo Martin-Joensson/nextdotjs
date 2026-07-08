@@ -1,0 +1,908 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Philip J. Fry",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/philip-j_-fry.webp"
+    },
+    {
+      "id": 2,
+      "name": "Morgan Proctor",
+      "gender": "FEMALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/morgan-proctor.webp"
+    },
+    {
+      "id": 3,
+      "name": "Mugger",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/mugger.webp"
+    },
+    {
+      "id": 4,
+      "name": "Ned Farnsworth",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/ned-farnsworth.webp"
+    },
+    {
+      "id": 5,
+      "name": "Nina",
+      "gender": "FEMALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/nina.webp"
+    },
+    {
+      "id": 6,
+      "name": "Nichelle Nichols",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/nichelle-nichols-_character_.webp"
+    },
+    {
+      "id": 7,
+      "name": "Mr. Panucci",
+      "gender": "MALE",
+      "status": "DEAD",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/mr_-panucci.webp"
+    },
+    {
+      "id": 8,
+      "name": "Njörd",
+      "gender": "FEMALE",
+      "status": "DEAD",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/nj_rd.webp"
+    },
+    {
+      "id": 9,
+      "name": "Number 9 man",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/number-9-man.webp"
+    },
+    {
+      "id": 10,
+      "name": "Mildred Fry",
+      "gender": "FEMALE",
+      "status": "DEAD",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/mildred-fry.webp"
+    },
+    {
+      "id": 11,
+      "name": "Minx",
+      "gender": "FEMALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/minx.webp"
+    },
+    {
+      "id": 12,
+      "name": "Michelle Jenkins",
+      "gender": "FEMALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/michelle-jenkins.webp"
+    },
+    {
+      "id": 13,
+      "name": "Marianne",
+      "gender": "FEMALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/marianne.webp"
+    },
+    {
+      "id": 14,
+      "name": "Lou",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/lou.webp"
+    },
+    {
+      "id": 15,
+      "name": "The Little Prince",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/the-little-prince.webp"
+    },
+    {
+      "id": 16,
+      "name": "Bender Bending Rodríguez",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "ROBOT",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/robot/bender-bending-rodr_guez.webp"
+    },
+    {
+      "id": 17,
+      "name": "Tritonian Yeti",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "MONSTER",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/monster/tritonian-yeti.webp"
+    },
+    {
+      "id": 18,
+      "name": "Yanos",
+      "gender": "UNKNOWN",
+      "status": "UNKNOWN",
+      "species": "UNKNOWN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/unknown/yanos.webp"
+    },
+    {
+      "id": 19,
+      "name": "Bigfoot",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "MONSTER",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/monster/bigfoot.webp"
+    },
+    {
+      "id": 20,
+      "name": "Loch Ness Monster",
+      "gender": "FEMALE",
+      "status": "ALIVE",
+      "species": "MONSTER",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/monster/loch-ness-monster.webp"
+    },
+    {
+      "id": 21,
+      "name": "Pazuzu",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "MONSTER",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/monster/pazuzu.webp"
+    },
+    {
+      "id": 22,
+      "name": "Walter Koenig",
+      "gender": "UNKNOWN",
+      "status": "UNKNOWN",
+      "species": "UNKNOWN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/unknown/walter-koenig.webp"
+    },
+    {
+      "id": 23,
+      "name": "Walter Mondale's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/walter-mondale_s-head.webp"
+    },
+    {
+      "id": 24,
+      "name": "Mom",
+      "gender": "FEMALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/mom.webp"
+    },
+    {
+      "id": 25,
+      "name": "Tom Cruise's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 26,
+      "name": "Tim Allen's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 27,
+      "name": "Stephen Hawking",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "UNKNOWN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/unknown/stephen-hawking.webp"
+    },
+    {
+      "id": 28,
+      "name": "Sharon Stone's head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 29,
+      "name": "El chupanibre",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "MUTANT",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/mutant/el-chupanibre.webp"
+    },
+    {
+      "id": 30,
+      "name": "Sarah Michelle Gellar's head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 31,
+      "name": "William Shatner's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/william-shatner_s-head.webp"
+    },
+    {
+      "id": 32,
+      "name": "Robert Wagner's head",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/robert-wagner_s-head.webp"
+    },
+    {
+      "id": 33,
+      "name": "William Howard Taft's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/william-howard-taft_s-head.webp"
+    },
+    {
+      "id": 34,
+      "name": "Ross Perot's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/ross-perot_s-head.webp"
+    },
+    {
+      "id": 35,
+      "name": "Warren G. Harding's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 36,
+      "name": "Ronald Reagan's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/ronald-reagan_s-head.webp"
+    },
+    {
+      "id": 37,
+      "name": "Traci Lords' head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/traci-lords_-head.webp"
+    },
+    {
+      "id": 38,
+      "name": "Thomas Jefferson's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/thomas-jefferson_s-head.webp"
+    },
+    {
+      "id": 39,
+      "name": "Theodore Roosevelt's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/theodore-roosevelt_s-head.webp"
+    },
+    {
+      "id": 40,
+      "name": "Sylvester Stalone's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 41,
+      "name": "Rob Reiner's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/rob-reiner_s-head.webp"
+    },
+    {
+      "id": 42,
+      "name": "Snoop Dogg's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/snoop-dogg_s-head.webp"
+    },
+    {
+      "id": 43,
+      "name": "Sergio Aragonés' head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/sergio-aragon_s_-head.webp"
+    },
+    {
+      "id": 44,
+      "name": "Rich Little's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/rich-little_s-head.webp"
+    },
+    {
+      "id": 45,
+      "name": "Rebecca Romijn's head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/rebecca-romijn_s-head.webp"
+    },
+    {
+      "id": 46,
+      "name": "Samuel Genital's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/samuel-genital_s-head.webp"
+    },
+    {
+      "id": 47,
+      "name": "Mimi Rogers' head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 48,
+      "name": "Michael Dukakis' head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 49,
+      "name": "Matt Groening's head",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/matt-groening_s-head.webp"
+    },
+    {
+      "id": 50,
+      "name": "Martin Lawrence's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 51,
+      "name": "Ron Popeil's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/ron-popeil_s-head.webp"
+    },
+    {
+      "id": 52,
+      "name": "Lassie",
+      "gender": "UNKNOWN",
+      "status": "UNKNOWN",
+      "species": "UNKNOWN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 53,
+      "name": "Ron Jeremy's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/ron-jeremy_s-head.webp"
+    },
+    {
+      "id": 54,
+      "name": "Richard M. Nixon's head",
+      "gender": "MALE",
+      "status": "DEAD",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/richard-m_-nixon_s-head.webp"
+    },
+    {
+      "id": 55,
+      "name": "Lyndon LaRouche's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 56,
+      "name": "Penn Jillette's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/penn-jillette_s-head.webp"
+    },
+    {
+      "id": 57,
+      "name": "Pamela Anderson's head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/pamela-anderson_s-head.webp"
+    },
+    {
+      "id": 58,
+      "name": "Orson Welles' head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/orson-welles_-head.webp"
+    },
+    {
+      "id": 59,
+      "name": "Nicole Kidman's head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 60,
+      "name": "Lucille Ball's head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 61,
+      "name": "Napoleon's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 62,
+      "name": "Laetitia Casta's head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/laetitia-casta_s-head.webp"
+    },
+    {
+      "id": 63,
+      "name": "Martin Van Buren's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/martin-van-buren_s-head.webp"
+    },
+    {
+      "id": 64,
+      "name": "Jon Stewart's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 65,
+      "name": "John Turturro's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 66,
+      "name": "Martha Stewart's head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/martha-stewart_s-head.webp"
+    },
+    {
+      "id": 67,
+      "name": "Jay Leno's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 68,
+      "name": "Jerry Seinfeld's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 69,
+      "name": "Lucy Liu's head",
+      "gender": "FEMALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/lucy-liu_s-head.webp"
+    },
+    {
+      "id": 70,
+      "name": "Jacques Cousteau's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 71,
+      "name": "Jack Nicholson's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 72,
+      "name": "Leonardo DiCaprio's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/leonardo-dicaprio_s-head.webp"
+    },
+    {
+      "id": 73,
+      "name": "Long Dong Silver's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/long-dong-silver_s-head.webp"
+    },
+    {
+      "id": 74,
+      "name": "Leonard Nimoy's head",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/leonard-nimoy_s-head.webp"
+    },
+    {
+      "id": 75,
+      "name": "Jonathan Frakes' head",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/jonathan-frakes_-head.webp"
+    },
+    {
+      "id": 76,
+      "name": "Kate Moss's head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/kate-moss_s-head.webp"
+    },
+    {
+      "id": 77,
+      "name": "Henry Kissinger's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/henry-kissinger_s-head.webp"
+    },
+    {
+      "id": 78,
+      "name": "Heidi Klum's head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/heidi-klum_s-head.webp"
+    },
+    {
+      "id": 79,
+      "name": "Gillian Anderson's head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 80,
+      "name": "Joan Rivers' head",
+      "gender": "FEMALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/joan-rivers_-head.webp"
+    },
+    {
+      "id": 81,
+      "name": "Jimmy Carter's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/jimmy-carter_s-head.webp"
+    },
+    {
+      "id": 82,
+      "name": "Jill Big Breasts' head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/jill-big-breasts_-head.webp"
+    },
+    {
+      "id": 83,
+      "name": "George Takei",
+      "gender": "UNKNOWN",
+      "status": "UNKNOWN",
+      "species": "UNKNOWN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/unknown/george-takei.webp"
+    },
+    {
+      "id": 84,
+      "name": "George Foreman's head",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/george-foreman_s-head.webp"
+    },
+    {
+      "id": 85,
+      "name": "Eric Stoltz's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 86,
+      "name": "Eric Cartman's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/eric-cartman_s-head.webp"
+    },
+    {
+      "id": 87,
+      "name": "Homer Simpson's head",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/homer-simpson_s-head.webp"
+    },
+    {
+      "id": 88,
+      "name": "Herbert Hoover's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/herbert-hoover_s-head.webp"
+    },
+    {
+      "id": 89,
+      "name": "Dick Clark's head",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/dick-clark_s-head.webp"
+    },
+    {
+      "id": 90,
+      "name": "Dick Cheney's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/dick-cheney_s-head.webp"
+    },
+    {
+      "id": 91,
+      "name": "Elizabeth Taylor's head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/elizabeth-taylor_s-head.webp"
+    },
+    {
+      "id": 92,
+      "name": "DeForest Kelley's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/deforest-kelley_s-head.webp"
+    },
+    {
+      "id": 93,
+      "name": "Hank Aaron's head",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/hank-aaron_s-head.webp"
+    },
+    {
+      "id": 94,
+      "name": "Harry S. Truman's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/harry-s_-truman_s-head.webp"
+    },
+    {
+      "id": 95,
+      "name": "Grover Cleveland's head",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/grover-cleveland_s-head.webp"
+    },
+    {
+      "id": 96,
+      "name": "David X. Cohen's head",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/david-x_-cohen_s-head.webp"
+    },
+    {
+      "id": 97,
+      "name": "Clint Eastwood's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": null
+    },
+    {
+      "id": 98,
+      "name": "Gerald Ford's head",
+      "gender": "MALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/gerald-ford_s-head.webp"
+    },
+    {
+      "id": 99,
+      "name": "Claudia Schiffer's head",
+      "gender": "FEMALE",
+      "status": "UNKNOWN",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/claudia-schiffer_s-head.webp"
+    },
+    {
+      "id": 100,
+      "name": "George Washington's head",
+      "gender": "MALE",
+      "status": "ALIVE",
+      "species": "HUMAN",
+      "createdAt": "2023-12-02T18:32:33.122015Z",
+      "image": "https://futuramaapi.com/static/img/human/george-washington_s-head.webp"
+    }
+  ],
+  "total": 427,
+  "page": 1,
+  "size": 100,
+  "pages": 5
+}
