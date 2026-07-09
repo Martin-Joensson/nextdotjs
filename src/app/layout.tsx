@@ -53,7 +53,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <MainNav />
-        {children}
+        <main className="">{children}</main>
       </body>
     </html>
   );

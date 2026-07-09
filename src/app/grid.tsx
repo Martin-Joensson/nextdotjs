@@ -13,12 +13,12 @@ export default function Grid() {
         <p>Who can you expect to meet?</p>
       </div>
       <ul className=" grid grid-cols-[repeat(auto-fill,minmax(30ch,1fr))] gap-4">
-        {characters.map((char) => (
+        {characters.slice(0,8).map((char) => (
           <li
             key={char.id}
             className=" bg-zinc-800 grid *:not-[img]:m-4 border rounded-lg border-amber-500 "
             >
-                <Card name={char.name} image={char.image} />
+                <Card name={char.name} image={char.image} gender={char.status} />
           </li>
         ))}
       </ul>
