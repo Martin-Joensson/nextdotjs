@@ -18,7 +18,7 @@ export default function Grid() {
             key={char.id}
             className=" bg-zinc-800 grid *:not-[img]:m-4 border rounded-lg border-amber-500 "
             >
-                <Card name={char.name} image={char.image} gender={char.status} />
+                <Card char={char} />
           </li>
         ))}
       </ul>
