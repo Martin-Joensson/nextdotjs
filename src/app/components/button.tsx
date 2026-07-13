@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface buttonProps {
   text: string;
   linkString: string;
@@ -12,8 +14,8 @@ export default function Button({ text, linkString, className }: buttonProps) {
   }
 
   return (
-    <a className={style} href={linkString}>
+    <Link className={style} href={linkString}>
       {text}
-    </a>
+    </Link>
   );
 }

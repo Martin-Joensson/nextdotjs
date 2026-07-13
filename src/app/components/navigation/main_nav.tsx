@@ -7,7 +7,7 @@ export default function MainNav() {
       text: "Classes",
     },
     {
-      link: "/about",
+      link: "/blog",
       text: "About us",
     },
     {
