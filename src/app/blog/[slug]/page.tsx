@@ -3,8 +3,31 @@ import posts from "../../../../public/posts.json";
 import characters from "@/app/data/characters.json";
 import { capitalize } from "@/app/utils/capitalize";
 import { notFound } from "next/navigation";
-import Link from "next/link";
-import Button from "@/app/components/button";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { slug: idStr } = await params;
+
+  console.log(idStr);
+  // convert and check for invalid ids
+  const id = Number(idStr);
+  console.log(id);
+  const character = characters.items[id - 1];
+  console.log("get data: ", character);
+
+  if (!id) {
+    return null;
+  }
+
+  if (!character) {
+    return null;
+  }
+
+  return { title: `${character.name} - Futurama `};
+}
 
 export default async function BlogPostPage({
   params,
