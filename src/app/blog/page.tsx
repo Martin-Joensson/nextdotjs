@@ -1,12 +1,18 @@
 import Link from "next/link";
-import posts from "../../../public/posts.json";
 import characters from "@/app/data/characters.json";
+import { Character } from "../types/character";
+import { getCharacter, getCharacters } from "../data/characters";
 
 export default async function Posts() {
+  const page = 1;
+  const limit = 100;
+  const species = "robot"
+  const characters: Character[] = await getCharacters(page, limit, species);
+
   const tagStyle = "text-sm rounded-lg py-1 px-3 text-center outline-2";
 
   let genderStyle = "bg-zinc-400";
-  const checkGender = (char) => {
+  const checkGender = (char: Character) => {
     if (char.gender?.toLowerCase() === "male")
       genderStyle = "bg-blue-300 text-black";
     if (char.gender?.toLowerCase() === "female")
@@ -14,7 +20,7 @@ export default async function Posts() {
   };
 
   let statusStyle = "bg-zinc-400";
-  const checkStyle = (char) => {
+  const checkStyle = (char: Character) => {
     if (char.status?.toLowerCase() === "dead")
       statusStyle = "bg-zinc-900 text-red-400 outline-2 outline-red-500";
     if (char.status?.toLowerCase() === "alive")
@@ -26,7 +32,7 @@ export default async function Posts() {
   return (
     <div className="pt-16 ">
       <ul className="flex flex-col gap-2">
-        {characters.items.map((post) => (
+        {characters.map((post) => (
           <li key={post.id} className="border-b py-2 px-2 hover:bg-zinc-600">
             <Link
               className="flex flex-col sm:flex-row justify-between"

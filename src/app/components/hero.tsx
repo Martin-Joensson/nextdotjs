@@ -13,7 +13,7 @@ export const Hero = () => {
           width={300}
           height={400}
           alt=""
-          eager="true"
+          loading="eager"
         />
         <div className="absolute inset-0 bg-linear-to-b  from-amber-700/50 via-zinc-800/80 to-purple-900/30 to-90%"></div>
         <div className="relative z-20 flex mx-auto border-2 border-dashed border-zinc-100/50 rounded-full p-8 aspect-square animate-orbit motion-reduce:animate-none">

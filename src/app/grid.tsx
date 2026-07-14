@@ -1,17 +1,11 @@
-import data from "@/app/data/characters.json";
-import Image from "next/image";
-import Button from "./components/button";
 import Card from "./components/card";
 import { getCharacters } from "./data/characters";
+import type { Character } from "./types/character";
 
 export default async function Grid() {
   const page = 1;
   const limit = 20;
-  const fetchedData = await getCharacters(page, limit);
-  console.log(fetchedData);
-  // const limit = 8;
-  // const page = 1;
-  const characters = fetchedData;
+  const characters: Character[] = await getCharacters(page, limit);
 
   return (
     <div className="max-w-7xl mx-auto mt-8">

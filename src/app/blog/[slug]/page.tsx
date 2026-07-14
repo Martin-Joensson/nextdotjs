@@ -4,29 +4,28 @@ import characters from "@/app/data/characters.json";
 import { capitalize } from "@/app/utils/capitalize";
 import { notFound } from "next/navigation";
 import { getCharacter } from "@/app/data/characters";
+import type { Character } from "@/app/types/character";
 
-// export async function generateMetadata({
-//   params,
-// }: {
-//   params: Promise<{ id: string }>;
-// }) {
-//   const { slug: idStr } = await params;
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug: idStr } = await params;
 
-//   console.log(idStr);
-//   // convert and check for invalid ids
-//   const id = Number(idStr);
-//   const character = characters.items[id - 1];
+  console.log(idStr);
+  const character = await getCharacter(idStr);
 
-//   if (!id) {
-//     return null;
-//   }
+  if (!idStr) {
+    return null;
+  }
 
-//   if (!character) {
-//     return null;
-//   }
+  if (!character) {
+    return null;
+  }
 
-//   return { title: `${character.name} - Futurama ` };
-// }
+  return { title: `${character.name} - Futurama ` };
+}
 
 export default async function BlogPostPage({
   params,
@@ -35,27 +34,29 @@ export default async function BlogPostPage({
 }) {
   const { slug } = await params;
   // const post = characters.items.filter(checkSlug)[0];
-  
+
   const post = await getCharacter(slug);
 
-  function checkSlug(postSlug) {
-    if (postSlug.id.toString() === slug) return true;
-  }
+  // function checkSlug(postSlug) {
+  //   if (postSlug.id.toString() === slug) return true;
+  // }
 
   if (!post) return notFound();
 
   const tagStyle = "text-sm rounded-lg py-1 px-3 text-center outline-2";
 
   let genderStyle = "bg-zinc-400";
-  const checkGender = (char) => {
+  const checkGender = (char: Character) => {
     if (char.gender?.toLowerCase() === "male")
       genderStyle = "bg-blue-300 text-black";
     if (char.gender?.toLowerCase() === "female")
       genderStyle = "bg-red-200 text-black";
+    if (char.gender?.toLowerCase() === "unknown")
+      statusStyle = "bg-zinc-400 text-black";
   };
 
   let statusStyle = "bg-zinc-400";
-  const checkStyle = (char) => {
+  const checkStyle = (char: Character) => {
     if (char.status?.toLowerCase() === "dead")
       statusStyle = "bg-zinc-900 text-red-400 outline-2 outline-red-500";
     if (char.status?.toLowerCase() === "alive")
@@ -63,7 +64,6 @@ export default async function BlogPostPage({
     if (char.status?.toLowerCase() === "unknown")
       statusStyle = "bg-zinc-400 text-black";
   };
-
 
   return (
     <div className="bg-zinc-900 flex p-4 justify-between pt-20 ">
@@ -101,6 +101,7 @@ export default async function BlogPostPage({
             width={600}
             height={600}
             alt=""
+            loading="eager"
           />
         )}
       </div>
