@@ -1,0 +1,26 @@
+export async function getCharacters(page = 1, limit = 8) {
+  const fetchedData = await fetch(
+    `https://futuramaapi.com/api/characters?species=alien&orderBy=id&orderByDirection=asc&page=${page}&size=${limit}`,
+  );
+
+  const json = await fetchedData.json();
+  console.log(json);
+
+  if (!fetchedData.ok) throw new Error("Error in request");
+  const res = json.items;
+  console.log("Res: ", res);
+  return await res;
+}
+
+export async function getCharacter(id) {
+  const fetchedData = await fetch(
+    `https://futuramaapi.com/api/characters/${id}`,
+  );
+  const json = await fetchedData.json();
+  console.log(json);
+
+  if (!fetchedData.ok) throw new Error("Error in request");
+  const res = json;
+  console.log("Res: ", res);
+  return await res;
+}
