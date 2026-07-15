@@ -5,7 +5,9 @@ import type { Character } from "./types/character";
 export default async function Grid() {
   const page = 1;
   const limit = 20;
-  const characters: Character[] = await getCharacters(page, limit);
+
+  const data = await getCharacters(page, limit);
+  const characters: Character[] = data.items;
 
   return (
     <div className="max-w-7xl mx-auto mt-8">

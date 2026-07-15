@@ -5,6 +5,7 @@ import { capitalize } from "@/app/utils/capitalize";
 import { notFound } from "next/navigation";
 import { getCharacter } from "@/app/data/characters";
 import type { Character } from "@/app/types/character";
+import Link from "next/link";
 
 export async function generateMetadata({
   params,
@@ -12,8 +13,6 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug: idStr } = await params;
-
-  console.log(idStr);
   const character = await getCharacter(idStr);
 
   if (!idStr) {
@@ -28,42 +27,49 @@ export async function generateMetadata({
 }
 
 export default async function BlogPostPage({
-  params,
+  params, searchParams
 }: {
   params: Promise<{ slug: string }>;
+  searchParams: Promise<{
+    page?: string;
+    species?: string;
+    size?: string;
+  }>;
 }) {
   const { slug } = await params;
-  // const post = characters.items.filter(checkSlug)[0];
+  const filters = await searchParams;
+
+  const backUrl = `/blog?page=${filters.page ?? 1}&species=${filters.species ?? ""}&size=${filters.size ?? 10}`
 
   const post = await getCharacter(slug);
 
-  // function checkSlug(postSlug) {
-  //   if (postSlug.id.toString() === slug) return true;
-  // }
-
   if (!post) return notFound();
 
+  const getGenderStyle = (char: Character) => {
+    switch (char.gender?.toLowerCase()) {
+      case "male":
+        return "bg-blue-300 text-black";
+      case "female":
+        return "bg-red-200 text-black";
+      default:
+        return "bg-zinc-400";
+    }
+  };
+
+  const getStatusStyle = (char: Character) => {
+    switch (char.status?.toLowerCase()) {
+      case "alive":
+        return "bg-teal-400 text-black";
+      case "dead":
+        return "bg-zinc-900 text-red-400 outline-2 outline-red-500";
+      default:
+        return "bg-zinc-400";
+    }
+  };
+
   const tagStyle = "text-sm rounded-lg py-1 px-3 text-center outline-2";
-
-  let genderStyle = "bg-zinc-400";
-  const checkGender = (char: Character) => {
-    if (char.gender?.toLowerCase() === "male")
-      genderStyle = "bg-blue-300 text-black";
-    if (char.gender?.toLowerCase() === "female")
-      genderStyle = "bg-red-200 text-black";
-    if (char.gender?.toLowerCase() === "unknown")
-      statusStyle = "bg-zinc-400 text-black";
-  };
-
-  let statusStyle = "bg-zinc-400";
-  const checkStyle = (char: Character) => {
-    if (char.status?.toLowerCase() === "dead")
-      statusStyle = "bg-zinc-900 text-red-400 outline-2 outline-red-500";
-    if (char.status?.toLowerCase() === "alive")
-      statusStyle = "bg-teal-400 text-black";
-    if (char.status?.toLowerCase() === "unknown")
-      statusStyle = "bg-zinc-400 text-black";
-  };
+  const buttonStyle =
+    "bg-zinc-800 my-4 px-4 rounded-lg border text-center self-end hover:bg-teal-500";
 
   return (
     <div className="bg-zinc-900 flex p-4 justify-between pt-20 ">
@@ -72,14 +78,10 @@ export default async function BlogPostPage({
           <h2 className="font-bold font-rubik text-3xl">{post.name}</h2>
           <p>{capitalize(post?.species)}</p>
           <div className="flex gap-2">
-            <span
-              className={`${tagStyle} + ${checkStyle(post)} ${statusStyle}`}
-            >
+            <span className={`${tagStyle} +  ${getStatusStyle(post)}`}>
               {post.status}
             </span>
-            <span
-              className={`${tagStyle} + ${checkGender(post)} ${genderStyle}`}
-            >
+            <span className={`${tagStyle} +  ${getGenderStyle(post)}`}>
               {post.gender}
             </span>
             <span className={`${tagStyle}`}>{post.species}</span>
@@ -93,6 +95,10 @@ export default async function BlogPostPage({
             cumque quae facere debitis eveniet ex delectus deleniti neque ut,
             tenetur veniam rerum omnis dicta. Nulla, nobis.
           </p>
+
+          <Link href={backUrl} className={buttonStyle}>
+            Back
+          </Link>
         </div>
         {post.image && (
           <Image

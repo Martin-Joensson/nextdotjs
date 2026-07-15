@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { Character } from "../types/character";
 import { getCharacter, getCharacters } from "../data/characters";
+import CharacterFilters from "../components/characterFilters";
 
 type Props = {
   searchParams: Promise<{
     page?: string;
-    limit?: string;
+    size?: string;
     species?: string;
   }>;
 };
@@ -14,15 +15,13 @@ export default async function Posts({ searchParams }: Props) {
   const params = await searchParams;
 
   const page = Number(params.page ?? "1");
-  const limit = Number(params.limit ?? "10");
-  const species = params.species ?? "alien";
+  const size = Number(params.size ?? "10");
+  const species = params.species ?? "";
 
-  const data = await getCharacters(page, limit, species);
-
+  const data = await getCharacters(page, size, species);
+  console.log(data.items);
   const characters: Character[] = data.items;
   const totalPages = data.pages;
-
-  console.log(totalPages);
 
   const getGenderStyle = (char: Character) => {
     switch (char.gender?.toLowerCase()) {
@@ -56,7 +55,7 @@ export default async function Posts({ searchParams }: Props) {
         {page > 1 ? (
           <Link
             className={buttonStyle}
-            href={`/blog?page=${page - 1}&species=${species}`}
+            href={`/blog?page=${page - 1}&species=${species}&size${size}`}
           >
             Previous
           </Link>
@@ -66,20 +65,21 @@ export default async function Posts({ searchParams }: Props) {
         {page < totalPages ? (
           <Link
             className={buttonStyle}
-            href={`/blog?page=${page + 1}&species=${species}`}
+            href={`/blog?page=${page + 1}&species=${species}&size${size}`}
           >
             Next
           </Link>
         ) : (
           <span className={`opacity-50 ${buttonStyle}`}>Next</span>
         )}
+        <CharacterFilters />
       </div>
       <ul className="flex flex-col gap-2">
         {characters.map((post) => (
           <li key={post.id} className="border-b py-2 px-2 hover:bg-zinc-600">
             <Link
               className="flex flex-col sm:flex-row justify-between"
-              href={`/blog/${post.id}`}
+              href={`/blog/${post.id}?page=${page}&species=${species}&size=${size}`}
             >
               <span>{post.name}</span>
               <div className="flex w-88 gap-2">

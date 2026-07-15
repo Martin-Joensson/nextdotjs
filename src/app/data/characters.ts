@@ -1,7 +1,15 @@
-export async function getCharacters(page = 1, limit = 8, species = "alien") {
-  const fetchedData = await fetch(
-    `https://futuramaapi.com/api/characters?species=${species}&orderBy=id&orderByDirection=asc&page=${page}&size=${limit}`,
-  );
+export async function getCharacters(page = 1, size = 8, species = "") {
+  const url = new URL("https://futuramaapi.com/api/characters");
+
+  // ?species=${species}&orderBy=id&orderByDirection=asc&page=${page}&size=${limit}`,
+
+  url.searchParams.set("page", page.toString());
+  url.searchParams.set("size", size.toString());
+  if (species) {
+    url.searchParams.set("species", species.toString());
+  }
+
+  const fetchedData = await fetch(url);
 
   const json = await fetchedData.json();
   console.log(json);
