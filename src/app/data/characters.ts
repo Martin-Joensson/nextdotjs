@@ -8,7 +8,7 @@ export async function getCharacters(page = 1, limit = 8, species = "alien") {
 
   if (!fetchedData.ok) throw new Error("Error in request");
 
-  const res = json.items;
+  const res = json;
   console.log("Res: ", res);
   return await res;
 }
