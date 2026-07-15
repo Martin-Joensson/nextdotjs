@@ -55,7 +55,7 @@ export default async function Posts({ searchParams }: Props) {
         {page > 1 ? (
           <Link
             className={buttonStyle}
-            href={`/blog?page=${page - 1}&species=${species}&size${size}`}
+            href={`/blog?page=${page - 1}&species=${species}&size=${size}`}
           >
             Previous
           </Link>
@@ -65,7 +65,7 @@ export default async function Posts({ searchParams }: Props) {
         {page < totalPages ? (
           <Link
             className={buttonStyle}
-            href={`/blog?page=${page + 1}&species=${species}&size${size}`}
+            href={`/blog?page=${page + 1}&species=${species}&size=${size}`}
           >
             Next
           </Link>
