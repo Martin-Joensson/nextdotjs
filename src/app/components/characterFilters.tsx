@@ -6,7 +6,7 @@ export default function CharacterFilters() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const species = searchParams.get("species") ?? "alien";
+  const species = searchParams.get("species") ?? "";
   const size = searchParams.get("size") ?? "10";
 
   function updateParam(key: string, value: string) {
@@ -26,7 +26,7 @@ export default function CharacterFilters() {
         value={species}
         onChange={(e) => updateParam("species", e.target.value)}
       >
-        <option value="" defaultChecked>
+        <option value="">
           - All -
         </option>
         <option value="alien">Alien</option>

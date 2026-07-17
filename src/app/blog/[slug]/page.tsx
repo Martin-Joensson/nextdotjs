@@ -73,7 +73,7 @@ export default async function BlogPostPage({
 
   return (
     <div className="bg-zinc-900 flex p-4 justify-between pt-20 ">
-      <div className="flex flex-col gap-4 sm:flex-row justify-between w-7xl mx-auto">
+      <div className="flex flex-col gap-4 md:flex-row justify-between w-7xl mx-auto">
         <div className="flex flex-col gap-2 max-w-2xl">
           <h2 className="font-bold font-rubik text-3xl">{post.name}</h2>
           <p>{capitalize(post?.species)}</p>
@@ -85,6 +85,7 @@ export default async function BlogPostPage({
               {post.gender}
             </span>
             <span className={`${tagStyle}`}>{post.species}</span>
+            <span className={`${tagStyle}`}>Id: #{post.id}</span>
           </div>
           <h3 className="font-bold text-xl mt-6">Description</h3>
           <p>
@@ -102,7 +103,7 @@ export default async function BlogPostPage({
         </div>
         {post.image && (
           <Image
-            className="rounded-2xl  object-cover"
+            className="rounded-2xl w-auto h-auto object-cover"
             src={post.image}
             width={600}
             height={600}

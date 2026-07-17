@@ -1,7 +1,8 @@
+import { notFound, redirect } from "next/navigation";
+import NotFound from "../blog/[slug]/not-found";
+
 export async function getCharacters(page = 1, size = 8, species = "") {
   const url = new URL("https://futuramaapi.com/api/characters");
-
-  // ?species=${species}&orderBy=id&orderByDirection=asc&page=${page}&size=${limit}`,
 
   url.searchParams.set("page", page.toString());
   url.searchParams.set("size", size.toString());
@@ -12,24 +13,26 @@ export async function getCharacters(page = 1, size = 8, species = "") {
   const fetchedData = await fetch(url);
 
   const json = await fetchedData.json();
-  console.log(json);
 
-  if (!fetchedData.ok) throw new Error("Error in request");
+  if (!fetchedData.ok) {
+    throw new Error("Error in request");
+  }
 
   const res = json;
-  console.log("Res: ", res);
   return await res;
 }
 
 export async function getCharacter(id: string) {
-  const fetchedData = await fetch(
-    `https://futuramaapi.com/api/characters/${id}`,
-  );
-  const json = await fetchedData.json();
-  console.log(json);
+  const response = await fetch(`https://futuramaapi.com/api/characters/${id}`);
+  console.log(response);
 
-  if (!fetchedData.ok) throw new Error("Error in request");
-  const res = json;
-  console.log("Res: ", res);
-  return await res;
+  if (response.status > 400) {
+    notFound();
+  }
+
+  // if (!response.ok) {
+  //   throw new Error(`Failed to fetch character (${response.status})`);
+  // }
+
+  return await response.json();
 }

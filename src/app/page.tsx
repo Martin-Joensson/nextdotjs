@@ -1,5 +1,5 @@
 import { Hero } from "./components/hero";
-import Grid from "./grid";
+import Grid from "./components/grid";
 
 export default function Home() {
   return (

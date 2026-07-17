@@ -1,10 +1,10 @@
-import Card from "./components/card";
-import { getCharacters } from "./data/characters";
-import type { Character } from "./types/character";
+import Card from "./card";
+import { getCharacters } from "../data/characters";
+import type { Character } from "../types/character";
 
 export default async function Grid() {
   const page = 1;
-  const limit = 20;
+  const limit = 12;
 
   const data = await getCharacters(page, limit);
   const characters: Character[] = data.items;
