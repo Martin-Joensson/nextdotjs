@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import { getCharacter } from "@/app/data/characters";
 import type { Character } from "@/app/types/character";
 import Link from "next/link";
+import { getStatusStyle } from "@/app/utils/getStatusStyle";
+import { getGenderStyle } from "@/app/utils/getGenderStyle";
 
 export async function generateMetadata({
   params,
@@ -45,27 +47,6 @@ export default async function BlogPostPage({
 
   if (!post) return notFound();
 
-  const getGenderStyle = (char: Character) => {
-    switch (char.gender?.toLowerCase()) {
-      case "male":
-        return "bg-blue-300 text-black";
-      case "female":
-        return "bg-red-200 text-black";
-      default:
-        return "bg-zinc-400";
-    }
-  };
-
-  const getStatusStyle = (char: Character) => {
-    switch (char.status?.toLowerCase()) {
-      case "alive":
-        return "bg-teal-400 text-black";
-      case "dead":
-        return "bg-zinc-900 text-red-400 outline-2 outline-red-500";
-      default:
-        return "bg-zinc-400";
-    }
-  };
 
   const tagStyle = "text-sm rounded-lg py-1 px-3 text-center outline-2";
   const buttonStyle =

@@ -1,6 +1,7 @@
 import Card from "./card";
 import { getCharacters } from "../data/characters";
 import type { Character } from "../types/character";
+import CharacterFilters from "./characterFilters";
 
 export default async function Grid() {
   const page = 1;
@@ -10,7 +11,7 @@ export default async function Grid() {
   const characters: Character[] = data.items;
 
   return (
-    <div className="max-w-7xl mx-auto mt-8">
+    <div className="max-w-7xl p-4 mx-auto mt-8">
       <div className="mb-4">
         <h2 className="text-2xl font-bold font-rubik">Crew and Characters</h2>
         <p>Who can you expect to meet?</p>

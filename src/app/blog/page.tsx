@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { Character } from "../types/character";
-import { getCharacter, getCharacters } from "../data/characters";
+import { getCharacters } from "../data/characters";
 import CharacterFilters from "../components/characterFilters";
+import { getGenderStyle } from "../utils/getGenderStyle";
+import { getStatusStyle } from "../utils/getStatusStyle";
 
 type Props = {
   searchParams: Promise<{
@@ -21,31 +23,8 @@ export default async function Posts({ searchParams }: Props) {
   const data = await getCharacters(page, size, species);
 
   const characters: Character[] = data.items;
-  // const currentPage = data.page;
-  // console.log(currentPage);
   const totalPages = data.pages;
 
-  const getGenderStyle = (char: Character) => {
-    switch (char.gender?.toLowerCase()) {
-      case "male":
-        return "bg-blue-300 text-black";
-      case "female":
-        return "bg-red-200 text-black";
-      default:
-        return "bg-zinc-400";
-    }
-  };
-
-  const getStatusStyle = (char: Character) => {
-    switch (char.status?.toLowerCase()) {
-      case "alive":
-        return "bg-teal-400 text-black";
-      case "dead":
-        return "bg-zinc-900 text-red-400 outline-2 outline-red-500";
-      default:
-        return "bg-zinc-400";
-    }
-  };
 
   const tagStyle = "text-sm rounded-lg py-1 px-3 text-center outline-2";
   const buttonStyle = "  px-4 rounded-lg border hover:bg-teal-500";
@@ -76,6 +55,7 @@ export default async function Posts({ searchParams }: Props) {
         )}
         <CharacterFilters />
       </div>
+
       <ul className="flex flex-col gap-2">
         {characters.map((post) => (
           <li key={post.id} className="border-b py-2 px-2 hover:bg-zinc-600">
@@ -106,6 +86,7 @@ export default async function Posts({ searchParams }: Props) {
           </li>
         ))}
       </ul>
+      
       <div className="my-4 flex flex-wrap justify-center">
         {[...Array(totalPages)].map((_, i) => {
           const pageNr = i + 1;

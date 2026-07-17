@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Button from "./button";
+import { getStatusStyle } from "../utils/getStatusStyle";
+import { getGenderStyle } from "../utils/getGenderStyle";
 
 interface CardProps {
   char: {
@@ -15,18 +17,6 @@ interface CardProps {
 
 export default function Card({ char }: CardProps) {
   const tagStyle = "text-sm rounded-lg py-1 px-3 text-center";
-
-  let genderStyle = "bg-zinc-400";
-  if (char.gender?.toLowerCase() === "male")
-    genderStyle = "bg-blue-300 text-black";
-  if (char.gender?.toLowerCase() === "female")
-    genderStyle = "bg-red-200 text-black";
-
-  let statusStyle = "bg-zinc-400";
-  if (char.status?.toLowerCase() === "dead")
-    statusStyle = "bg-zinc-900 text-red-400";
-  if (char.status?.toLowerCase() === "alive")
-    statusStyle = "bg-teal-400 text-black";
 
   return (
     <>
@@ -46,8 +36,12 @@ export default function Card({ char }: CardProps) {
         unoptimized={char.image ? true : false}
       />
       <div className="flex gap-2">
-        <span className={`${tagStyle} + ${statusStyle}`}>{char.status}</span>
-        <span className={`${tagStyle} + ${genderStyle}`}>{char.gender}</span>
+        <span className={`${tagStyle} + ${getStatusStyle(char)}`}>
+          {char.status}
+        </span>
+        <span className={`${tagStyle} + ${getGenderStyle(char)}`}>
+          {char.gender}
+        </span>
         <span className={`${tagStyle}`}>{char.species}</span>
       </div>
     </>

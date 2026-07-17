@@ -1,8 +1,0 @@
-{
-  "posts": [
-    { "slug": "1", "title": "Name 1", "content": "Wee 1" },
-    { "slug": "2", "title": "Name 2", "content": "Wee 2" },
-    { "slug": "3", "title": "Name 3", "content": "Wee 3" },
-    { "slug": "4", "title": "Name 4", "content": "Wee 3" }
-  ]
-}
